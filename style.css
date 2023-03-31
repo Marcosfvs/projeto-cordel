@@ -2,3 +2,107 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+
+:root {
+    --fonte1:'passion one', serif;
+    --fonte2:'sriracha', sans-serif;
+    
+}
+
+header {
+    background-color: black;
+    text-align: center;
+
+    min-height: 200px;
+}
+
+header h1 {
+    color: white;
+
+    font-family: var(--fonte1);
+    font-weight: bold;
+    font-size: 5.0em;
+   
+    padding-top: 50px;
+    }
+
+header p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    padding-top: 20px;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main p {
+   padding: 100px 0px 100px 25px;
+}
+
+div.est1 {
+    background-color: green;
+    background-image: url(imagens/background001.jpg);
+    background-repeat:  no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.est2 {
+    background-color: green;
+    background-image: url(imagens/background002.jpg);
+    background-repeat:  no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.versosb {
+    background-color: white;
+}
+
+div > p {
+    font-family:var(--fonte2);
+    font-size: 2.0em;
+    max-width: 350px;
+}
+
+div.versosi > p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.349);
+
+}
+
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+footer a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
