@@ -4,57 +4,70 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'passion one', cursive;
+    --fonte3:'sriracha', cursive;
+    
+}
+
 * {
     margin:0px;
     padding: 0px;
+    font-size: 1em;
 }
 
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: white;
+}
 
-:root {
-    --fonte1:'passion one', serif;
-    --fonte2:'sriracha', sans-serif;
-    
+a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
     background-color: black;
+    color: white;
     text-align: center;
 
     min-height: 200px;
 }
 
 header h1 {
-    color: white;
-
-    font-family: var(--fonte1);
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+    /*text-transform: uppercase; letras maiusxulas*/
     font-weight: bold;
-    font-size: 5.0em;
+    font-size: 10vw;
    
     padding-top: 50px;
     }
 
 header p {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte1);
 
-    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
-header a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+section {
+   padding-top: 10vh;
+   padding-bottom: 10vh;
+   padding-left: 30px;
+   line-height: 2.0em;
+   font-family: var(--fonte3);
+   font-size: 3.5vh;
 }
 
-header a:hover {
-    text-decoration: underline;
-}
-
-main p {
-   padding: 100px 0px 100px 25px;
-}
-
-div.est1 {
+section#img1 {
     background-color: green;
     background-image: url(imagens/background001.jpg);
     background-repeat:  no-repeat;
@@ -63,7 +76,7 @@ div.est1 {
     background-attachment: fixed;
 }
 
-div.est2 {
+section#img2 {
     background-color: green;
     background-image: url(imagens/background002.jpg);
     background-repeat:  no-repeat;
@@ -72,37 +85,32 @@ div.est2 {
     background-attachment: fixed;
 }
 
-div.versosb {
+section > P {
+    padding-bottom: 2em;
+}
+
+section.normal {
     background-color: white;
+    color: black;
 }
 
-div > p {
-    font-family:var(--fonte2);
-    font-size: 2.0em;
-    max-width: 350px;
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.452);
 }
 
-div.versosi > p{
+section.imagem {
     color: white;
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgb(78, 78, 78);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616);
 
 }
-
 
 footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte1);
     text-align: center;
     color: white;
     background-color: black;
-}
-footer a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
